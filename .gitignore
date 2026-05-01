@@ -1,0 +1,28 @@
+# Data & models (too large)
+data/
+models/
+*.pkl
+*.joblib
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Results that regenerate
+results/*.csv
+!results/.gitkeep
