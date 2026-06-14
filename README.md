@@ -109,7 +109,6 @@ python src/evaluation/evaluate.py
 
 ## Key Results
 
-*(Fill in your main findings here — e.g. accuracy tables, F1 scores per phase)*
 
 | Model | Phase 1 F1 (CIC-IDS2017) | Phase 2 F1 (NSL-KDD) |
 |---|---|---|
