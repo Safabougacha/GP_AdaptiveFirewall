@@ -1,0 +1,30 @@
+{
+  "pipeline_version": "2.0_fixed_no_leakage",
+  "leakage_fix": "source_ip, destination_ip, flow_id, source_port, timestamp removed",
+  "sample_fraction": 0.1,
+  "train_rows": 187721,
+  "test_rows": 80453,
+  "features": 78,
+  "GB_tuned": {
+    "accuracy": 0.9987,
+    "precision": 0.996,
+    "recall": 0.9968,
+    "f1": 0.9964,
+    "roc_auc": 0.9999,
+    "mcc": 0.9956,
+    "fpr": 0.0009,
+    "best_params": {
+      "learning_rate": 0.1,
+      "max_depth": 7,
+      "min_samples_split": 9,
+      "n_estimators": 150,
+      "subsample": 0.9895765921792413
+    }
+  },
+  "RF": {
+    "accuracy": 0.9983,
+    "f1": 0.9953,
+    "roc_auc": 0.9999,
+    "fpr": 0.0012
+  }
+}

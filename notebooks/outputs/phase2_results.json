@@ -1,0 +1,42 @@
+{
+  "dataset": "ISOT UNB Testbed (TestbedSunJun13 + TestbedWedJun16)",
+  "total_samples": 2071657,
+  "attack_samples": 68910,
+  "benign_samples": 2002747,
+  "attack_rate_pct": 3.33,
+  "feature_mapping": "30/78 directly engineered, 48/78 zero-imputed",
+  "models": {
+    "Random Forest": {
+      "accuracy": 0.9667,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5161,
+      "mcc": 0.0,
+      "fpr": 0.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9587,
+      "precision": 0.2434,
+      "recall": 0.115,
+      "f1": 0.1562,
+      "roc_auc": 0.6435,
+      "mcc": 0.1481,
+      "fpr": 0.0123
+    },
+    "DQN (RL)": {
+      "accuracy": 0.9667,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5079,
+      "mcc": -0.0012,
+      "fpr": 0.0
+    }
+  },
+  "f1_degradation": {
+    "Random Forest": -0.9953,
+    "Gradient Boosting": -0.8402,
+    "DQN (RL)": -0.9093
+  }
+}

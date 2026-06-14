@@ -1,0 +1,62 @@
+{
+  "dataset": "NSL-KDD (KDDTrain_ + KDDTest_)",
+  "total_samples": 148517,
+  "attack_samples": 71463,
+  "benign_samples": 77054,
+  "attack_rate_pct": 48.12,
+  "feature_mapping": "~35/78 directly engineered, ~43/78 zero-imputed",
+  "phase1": {
+    "Random Forest": {
+      "f1": 0.9953,
+      "auc": 0.9999,
+      "fpr": 0.0012,
+      "recall": 0.9958
+    },
+    "Gradient Boosting": {
+      "f1": 0.9964,
+      "auc": 0.9999,
+      "fpr": 0.0009,
+      "recall": 0.9968
+    },
+    "DQN (RL)": {
+      "f1": 0.9093,
+      "auc": 0.9963,
+      "fpr": 0.0019,
+      "recall": 0.8411
+    }
+  },
+  "phase2": {
+    "Random Forest": {
+      "accuracy": 0.5188,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.3195,
+      "mcc": 0.0,
+      "fpr": 0.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.1612,
+      "precision": 0.1002,
+      "recall": 0.0931,
+      "f1": 0.0965,
+      "roc_auc": 0.1297,
+      "mcc": -0.686,
+      "fpr": 0.7757
+    },
+    "DQN (RL)": {
+      "accuracy": 0.531,
+      "precision": 0.9038,
+      "recall": 0.0283,
+      "f1": 0.0548,
+      "roc_auc": 0.3525,
+      "mcc": 0.1046,
+      "fpr": 0.0028
+    }
+  },
+  "f1_delta": {
+    "Random Forest": -0.9953,
+    "Gradient Boosting": -0.8999,
+    "DQN (RL)": -0.8545
+  }
+}
